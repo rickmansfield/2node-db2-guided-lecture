@@ -1,0 +1,29 @@
+{
+    "name": "node-db2-guided",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "server": "nodemon index.js",
+        "ketchup": "git fetch && git reset --hard origin/lecture",
+        "up": "knex migrate:up",
+        "down": "knex migrate:down",
+        "latest": "knex migrate:latest",
+        "rollback": "knex migrate:rollback",
+        "seed": "knex seed:run"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LambdaSchool/node-db2-guided.git"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "helmet": "^4.6.0",
+        "knex": "^0.95.7",
+        "sqlite3": "^5.0.2"
+    },
+    "devDependencies": {
+        "eslint": "^7.32.0",
+        "nodemon": "^2.0.12"
+    }
+}
